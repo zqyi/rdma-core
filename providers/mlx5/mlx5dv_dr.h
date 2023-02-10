@@ -970,7 +970,6 @@ struct dr_domain_rx_tx {
 
 struct dr_domain_info {
 	bool			supp_sw_steering;
-	uint32_t		max_inline_size;
 	uint32_t		max_log_sw_icm_sz;
 	uint32_t		max_log_action_icm_sz;
 	uint32_t		max_send_size;

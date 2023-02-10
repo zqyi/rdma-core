@@ -636,7 +636,7 @@ static int dr_postsend_icm_data(struct mlx5dv_dr_domain *dmn,
 	if (ret)
 		goto out_unlock;
 
-	if (send_info->write.length > dmn->info.max_inline_size) {
+	if (send_info->write.length > send_info->max_inline_size) {
 		buff_offset = (send_ring->tx_head & (send_ring->signal_th - 1)) *
 			dmn->info.max_send_size;
 		/* Copy to ring mr */
